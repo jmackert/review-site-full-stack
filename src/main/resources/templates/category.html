@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>A Category</title>
+</head>
+<body>
+    <h1>A Single Category</h1>
+
+    <div th:each = "category: ${categories}">
+        <p th:text ="${category.name}"></p>
+        <p th:text ="${category.description}"></p>
+        <a href="http://localhost:8080/show-categories">Back to home</a>
+    </div>
+</body>
+</html>
